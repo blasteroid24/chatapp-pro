@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import { fetchChatHistory } from '../api';
 import io from 'socket.io-client';
 import '../css/chatroom.css'
+
 
 const ChatRoom = () => {
   const { room } = useParams();
@@ -58,7 +59,9 @@ const ChatRoom = () => {
 
   return (
     <div className='a'>
-      <h1 className='b'>Chat Room: {room}</h1>
+      <h1 className='b'>Chat Room: {room}
+      <Link to="/rum"><button className='btn'>Go back</button></Link>
+      </h1>
       <input
         className='c'
         type="text"

@@ -26,7 +26,9 @@ const RoomList = () => {
 
   return (
     <div className='m1'>
-      <h1 className='m2'>Chat Rooms</h1>
+      <h1 className='m2'>Chat Rooms
+      <Link to="/"><button className='btn1'>Go back</button></Link>
+      </h1>
       <input
        className='m3'
         type="text"
